@@ -46,7 +46,10 @@ module.exports = {
     ],
     resolve: {
         root: path.resolve('app/'),
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.css', '.scss'],
+        alias: {
+            bootstrap: path.join(__dirname, '/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css')
+        }
     },
     eslint: {
         failOnError: true
