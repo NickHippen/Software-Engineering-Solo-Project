@@ -11,7 +11,7 @@ export default {
     template: homeTemplate,
     controller: class {
         /*@ngInject*/
-        constructor() {
+        constructor(ForumService) {
             this.forumPosts = [{
                 title: 'Test forum post',
                 author: 'nhippen'
