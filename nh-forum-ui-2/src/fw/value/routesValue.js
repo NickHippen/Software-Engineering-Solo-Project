@@ -5,7 +5,7 @@
  *  @date    Sep 11, 2017
  *
  */
-import Things from '../..features/main';
+import Things from '../../features/main';
 
 export default {
     type: 'value',
