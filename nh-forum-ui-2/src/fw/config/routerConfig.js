@@ -9,7 +9,7 @@
  */
 import {omit, pluck} from '../helper/object';
 
-import Things from 'features/main';
+import Things from '../../features/main';
 
 export default {
     type: 'configure',
