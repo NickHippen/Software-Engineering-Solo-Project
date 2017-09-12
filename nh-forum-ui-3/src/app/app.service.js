@@ -5,10 +5,17 @@ export default class {
     angular.extend(this, {$http});
   }
 
-  getPosts() {
+  findPosts() {
     return this.$http({
       method: 'GET',
-      url: `http://localhost:8080/nh-forum-rest/MyServlet`
+      url: `http://localhost:8080/nh-forum-rest/listPosts`
+    });
+  }
+
+  getPost(postId) {
+    return this.$http({
+      method: 'GET',
+      url: `http://localhost:8080/nh-forum-rest/post/${postId}`
     });
   }
 

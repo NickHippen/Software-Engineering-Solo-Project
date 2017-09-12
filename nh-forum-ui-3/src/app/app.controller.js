@@ -3,7 +3,7 @@ export default class {
   constructor($log, AppService) {
     'ngInject';
     angular.extend(this, {$log, AppService});
-    AppService.getPosts().then(response => {
+    AppService.findPosts().then(response => {
       $log.info(response);
     });
     this.posts = [

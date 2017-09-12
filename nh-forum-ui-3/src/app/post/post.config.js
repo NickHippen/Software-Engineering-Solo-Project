@@ -3,7 +3,7 @@ export default function routesConfig($stateProvider) {
 
   $stateProvider
     .state('post', {
-      url: '/post',
+      url: '/post?postId',
       component: 'post'
     });
 }
