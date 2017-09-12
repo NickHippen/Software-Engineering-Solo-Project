@@ -5,6 +5,8 @@
  *  @date    Sep 11, 2017
  *
  */
+
+import '../../common/constants/rest-server';
 export default class {
 
     /*@ngInject*/

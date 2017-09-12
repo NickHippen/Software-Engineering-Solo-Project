@@ -12,6 +12,9 @@ export default {
     controller: class {
         /*@ngInject*/
         constructor(ForumService) {
+            ForumService.getForumPosts().then((response) => {
+                console.log('Response: ', response);
+            });
             this.forumPosts = [{
                 title: 'Test forum post',
                 author: 'nhippen'
