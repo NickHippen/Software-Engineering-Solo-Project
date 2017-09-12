@@ -1,8 +1,21 @@
 export default class {
 
-  constructor() {
+  constructor($log, AppService) {
     'ngInject';
-    this.hello = 'Hello World!';
+    angular.extend(this, {$log, AppService});
+    AppService.getPosts().then(response => {
+      $log.info(response);
+    });
+    this.posts = [
+      {
+        author: 'nhippen',
+        title: 'Sample forum post 1'
+      },
+      {
+        author: 'nhippen',
+        title: 'Sample forum post 2'
+      }
+    ];
   }
 
 }
