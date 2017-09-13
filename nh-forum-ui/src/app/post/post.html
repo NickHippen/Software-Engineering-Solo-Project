@@ -1,0 +1,20 @@
+<button><a ui-sref="app">Home</a></button>
+<h1 class="post-title" ng-bind="$ctrl.post.title"></h1>
+<div class="post-body">
+    <div class="post-content" ng-bind="$ctrl.post.body"></div>
+    <div class="post-author">by <span ng-bind="$ctrl.post.userId"></span></div>
+</div>
+<hr />
+<h2 class="comment-header">Comments</h2>
+<div class="comment-section">
+    <div ng-repeat="comment in $ctrl.post.comments" class="comment-body">
+        <div class="comment-content" ng-bind="comment.body"></div>
+        <div class="comment-author">by <span ng-bind="comment.userId"></span></div>
+    </div>
+    <div class="new-comment">
+        <h4>New Comment</h4>
+        <textarea ng-model="$ctrl.commentBody"></textarea><br />
+        <label>User Id: <input type="text" ng-model="$ctrl.commentUserId" /></label><br />
+        <input type="submit" value="Submit Comment" ng-click="$ctrl.submitComment()" />
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<h1>NH Forums</h1>
+<ul>
+  <li ng-repeat="post in $ctrl.posts"><a ui-sref="post({postId: {{post.postId}}})" ng-bind="post.title"></a> by <span ng-bind="post.userId"></span></li>
+</ul>
+<button><a ui-sref="create-post">Create New Post</a></button>

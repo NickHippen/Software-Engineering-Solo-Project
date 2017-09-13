@@ -1,0 +1,6 @@
+<button><a ui-sref="app">Home</a></button><br /><br />
+<label>Title: <input type="text" ng-model="$ctrl.title" /></label><br />
+<label for="body">Body:</label><br />
+<textarea id="body" ng-model="$ctrl.body"></textarea><br />
+<label>User Id: <input type="text" ng-model="$ctrl.userId" /></label><br />
+<input type="submit" value="Create" ng-click="$ctrl.createPost()" />
